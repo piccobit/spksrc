@@ -1,0 +1,11 @@
+--- setup.py	2017-07-12 20:10:09.212338082 +0000
++++ setup.py.new	2017-07-12 20:09:06.838805429 +0000
+@@ -19,7 +19,7 @@
+     glib_libs = [x.strip() for x in glib_libs if x]
+ 
+     if sys.version_info.major == 3:
+-        boost_libs = ["boost_python-py34"]
++        boost_libs = ["boost_python-py36"]
+     else:
+         boost_libs = ["boost_python"]
+     extension_modules = [
