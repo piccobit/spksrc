@@ -18,7 +18,7 @@ six==1.10.0
 virtualenv==15.1.0
 
 # cryptography dependencies
-enum34==1.1.6
+#enum34==1.1.6 # => Not needed with Python 3.6
 idna==2.2
 ipaddress==1.0.17
 pyasn1==0.1.9

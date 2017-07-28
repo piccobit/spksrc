@@ -1,6 +1,6 @@
 SPK_NAME = python3
-SPK_SHORT_VERS = 3.5
-SPK_VERS = $(SPK_SHORT_VERS).2
+SPK_SHORT_VERS = 3.6
+SPK_VERS = $(SPK_SHORT_VERS).1
 SPK_REV = 5
 SPK_ICON = src/python3.png
 
@@ -13,14 +13,14 @@ DEPENDS += cross/lxml cross/pycrypto cross/pycurl cross/pyyaml
 
 WHEELS = src/requirements.txt
 
-MAINTAINER = Diaoul
+MAINTAINER = HD Stich
 DESCRIPTION = Python Programming Language.
 DESCRIPTION_FRE = Langage de programmation Python.
 DESCRIPTION_SPN = Lenguaje de programación Python.
 RELOAD_UI = yes
 STARTABLE = no
 DISPLAY_NAME = Python3
-CHANGELOG = "1. Update to Python 3.5.2<br>2. Update modules"
+CHANGELOG = "1. Update to Python 3.6.1<br>2. Update modules"
 
 HOMEPAGE = http://www.python.org
 LICENSE  = PSF

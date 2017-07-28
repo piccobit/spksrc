@@ -1,11 +1,11 @@
 PKG_NAME = python3
 PKG_VERS_MAJOR = 3
-PKG_VERS_MINOR = 5
-PKG_VERS_PATCH = 2
+PKG_VERS_MINOR = 6
+PKG_VERS_PATCH = 1
 PKG_VERS = $(PKG_VERS_MAJOR).$(PKG_VERS_MINOR).$(PKG_VERS_PATCH)
 PKG_EXT = tar.xz
 PKG_DIST_NAME = Python-$(PKG_VERS).$(PKG_EXT)
-PKG_DIST_SITE = http://www.python.org/ftp/python/$(PKG_VERS)
+PKG_DIST_SITE = https://www.python.org/ftp/python/$(PKG_VERS)
 PKG_DIR = Python-$(PKG_VERS)
 
 DEPENDS  = cross/zlib cross/openssl cross/sqlite cross/readline cross/ncurses cross/bzip2 cross/xz

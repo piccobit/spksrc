@@ -1,11 +1,11 @@
 PKG_NAME = boost
-PKG_VERS = 1.63.0
+PKG_VERS = 1.64.0
 PKG_EXT = tar.bz2
 PKG_DIR = $(PKG_NAME)_$(subst .,_,$(PKG_VERS))
 PKG_DIST_NAME = $(PKG_DIR).$(PKG_EXT)
 PKG_DIST_SITE = http://sourceforge.net/projects/$(PKG_NAME)/files/$(PKG_NAME)/$(PKG_VERS)
 
-DEPENDS = cross/bzip2 cross/zlib cross/python
+DEPENDS = cross/bzip2 cross/zlib cross/python3
 
 HOMEPAGE = http://www.boost.org/
 COMMENT  = Boost provides free peer-reviewed portable C++ source libraries.
@@ -25,7 +25,7 @@ space:= $(empty) $(empty)
 
 GNU_CONFIGURE = 1
 CONFIGURE_ARGS  = --with-toolset=gcc --with-libraries=$(subst $(space),$(comma),$(sort $(BOOST_LIBRARIES))) --prefix=$(STAGING_INSTALL_PREFIX)
-CONFIGURE_ARGS += --with-python=$(WORK_DIR)/../../../native/python/work-native/install/usr/local/bin/python
+CONFIGURE_ARGS += --with-python=$(WORK_DIR)/../../../native/python3/work-native/install/usr/local/bin/python3.6
 
 include ../../mk/spksrc.cross-cc.mk
 -include $(WORK_DIR)/python-cc.mk

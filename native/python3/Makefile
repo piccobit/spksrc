@@ -1,8 +1,8 @@
 PKG_NAME = python
-PKG_VERS = 3.5.2
+PKG_VERS = 3.6.1
 PKG_EXT = tar.xz
 PKG_DIST_NAME = Python-$(PKG_VERS).$(PKG_EXT)
-PKG_DIST_SITE = http://www.python.org/ftp/python/$(PKG_VERS)
+PKG_DIST_SITE = https://www.python.org/ftp/python/$(PKG_VERS)
 PKG_DIR = Python-$(PKG_VERS)
 
 DEPENDS =
@@ -32,7 +32,7 @@ myPostInstall: $(WORK_DIR)/python-native.mk
 	@$(MSG) Installing setuptools, pip and cffi
 	@$(RUN) wget https://bootstrap.pypa.io/ez_setup.py -O - | $(PYTHON)
 	@$(RUN) wget https://bootstrap.pypa.io/get-pip.py -O - | $(PYTHON)
-	@$(PIP) install "cffi==1.9.1"
+	@$(PIP) install "cffi==1.10.0"
 
 $(WORK_DIR)/python-native.mk:
 	@echo PIP=$(PIP_NATIVE) >> $@
