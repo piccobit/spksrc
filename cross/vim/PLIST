@@ -7,3 +7,6 @@ bin:bin/vimdiff
 bin:bin/vimtutor
 bin:bin/xxd
 shr:share/vim
+shr:share/applications
+shr:share/icons
+lib:lib
